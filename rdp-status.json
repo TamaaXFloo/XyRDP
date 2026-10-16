@@ -1,25 +1,25 @@
 {
   "active": false,
-  "hostname": "rdpfree-4",
-  "os": "Microsoft Windows Server 2025 Datacenter",
-  "os_build": "10.0.26100",
+  "hostname": "rdpfree-5",
+  "os": "Microsoft Windows Server 2022 Datacenter",
+  "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
+    "disk_free_gb": 82.9,
     "ram_gb": 16.0,
-    "disk_free_gb": 32.1,
     "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-15T09:20:26Z",
-  "expires_at": "2026-10-15T15:15:26Z",
+  "started_at": "2026-10-16T00:30:29Z",
+  "expires_at": "2026-10-16T06:25:29Z",
   "duration_menit": 355,
-  "run_id": "38659273338",
-  "run_attempt": "2",
-  "run_number": "4",
-  "run_url": "https://github.com/TamaaXFloo/XyRDP/actions/runs/38659273338",
+  "run_id": "38829833938",
+  "run_attempt": "1",
+  "run_number": "5",
+  "run_url": "https://github.com/TamaaXFloo/XyRDP/actions/runs/38829833938",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,69 +39,15 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "status": "ok",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
+      "status": "failed",
       "ip": "",
       "magicdns": "",
       "hostname": "",
       "funnel_addr": ""
-    }
-  },
-  "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "audio_output": "rdp_playback_enabled"
-  },
-  "samp": {
-    "status": "dependencies_ready",
-    "samp_installed": false,
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "gta_installed": false,
-    "play_tested": false,
-    "directx": "verified_x86_x64",
-    "directplay": "Enabled",
-    "netfx3": "Enabled"
-  },
-  "games": {
-    "samp": {
-      "gta_installed": false,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-      "game_dir": null,
-      "samp_installed": false,
-      "status": "dependencies_ready"
     },
-    "roblox": {
-      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini.",
-      "status": "unsupported_environment"
-    },
-    "minecraft_java": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    }
+    "mode": "tailscale"
   },
-  "game_environment": {
-    "play_tested": false,
-    "windows_server": true,
-    "runner": "windows-2025",
-    "os": "Microsoft Windows Server 2025 Datacenter",
-    "hypervisor_present": true
-  },
-  "host_tools": {
-    "winrar": "verified 7.23.0 (vendor trial; license not included)",
-    "vcredist": "verified_current_v14_x86_x64",
-    "xampp": "verified_files_php_apache_config_mariadb_version; services not started",
-    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
-    "errors": [],
-    "public_port": false
-  },
-  "heartbeat_at": "2026-10-15T15:10:53.5246123Z",
-  "stopped_at": "2026-10-15T15:13:47Z"
+  "stopped_at": "2026-10-16T00:30:40Z"
 }
